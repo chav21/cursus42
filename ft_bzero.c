@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 10:31:50 by javier            #+#    #+#             */
-/*   Updated: 2022/11/08 17:40:12 by jacarras         ###   ########.fr       */
+/*   Created: 2022/11/08 18:41:59 by jacarras          #+#    #+#             */
+/*   Updated: 2022/11/08 18:56:04 by jacarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 SYNOPSIS
-	 #include <ctype.h>
-	 int isprint(int c);
-RETURN VALUES
-	 The isprint() function returns zero if the character tests false and 
-	 returns non-zero if the character tests true.
+     #include <strings.h>
+     void bzero(void *s, size_t n);
+DESCRIPTION
+	The bzero() function writes n zeroed bytes to the string s.  If n is zero,
+	bzero() does nothing.
 */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if (c >= 32 && c <= 126)
-		return (1);
-	return (0);
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		((char *)s)[i] = '\0';
+		i++;
+	}
 }
