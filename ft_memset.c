@@ -6,7 +6,7 @@
 /*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:53:47 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/08 20:15:37 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/11/09 11:57:13 by jacarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-
