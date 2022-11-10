@@ -6,7 +6,7 @@
 /*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:09:22 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/09 14:44:05 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/11/10 12:13:39 by jacarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ RETURN VALUES
 	 character, or NULL if the character does not appear in the string.
 */
 
-
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
@@ -35,15 +34,15 @@ char	*ft_strrchr(const char *s, int c)
 	char	*alt_s;
 	int		i;
 
-	i = ft_strlen(s) - 1;
+	i = ft_strlen(s);
 	alt_s = (char *)s;
 	alt_c = c;
 	if (alt_c == '\0')
-		return (NULL);
+		return (alt_s + i);
 	while (i >= 0)
 	{
 		if (alt_s[i] == alt_c)
-			return ((char *)alt_s + i);
+			return (alt_s + i);
 		i--;
 	}
 	return (NULL);
