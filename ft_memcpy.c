@@ -6,7 +6,7 @@
 /*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 18:56:59 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/08 19:30:02 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:50:38 by jacarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ DESCRIPTION
 	which dst and src might overlap should use memmove(3) instead.
 RETURN VALUES
      The memcpy() function returns the original value of dst.
+¡¡OJO!!
+	Fíjate cómo se castean las variables (lín 34 y 35)
 */
 
 #include "libft.h"
