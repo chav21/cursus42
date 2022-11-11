@@ -6,7 +6,7 @@
 /*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 17:57:49 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/11 18:24:11 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/11/11 19:11:20 by jacarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,25 +33,24 @@ RETURN VALUES
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
-	size_t	j;
+	size_t		i;
+	int			length;
+	char		*alt_haystack;
+	char		*alt_needle;
 
-	i = 0;
-	j = 0;
-
-	if (!needle)
+	if (!*needle)
 		return ((char *)haystack);
-	while (len > 0)
+	alt_haystack = (char *)haystack;
+	alt_needle = (char *)needle;
+	i = 0;
+	length = ft_strlen(needle);
+	while (alt_haystack[i] && (i + length) <= len)
 	{
-		while (needle)
+		if (ft_strncmp((alt_haystack + i), needle, length) == 0)
 		{
-			if (needle[i] == haystack[j])
-				return (NULL);
-			i++;
+			return (alt_haystack + i);
 		}
-		j++;
-		i = 0;
-		len--;
+		i++;
 	}
-	return ((char *)needle);
+	return (NULL);
 }
