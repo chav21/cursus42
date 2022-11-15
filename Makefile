@@ -6,7 +6,7 @@
 #    By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/01 18:07:23 by jacarras          #+#    #+#              #
-#    Updated: 2022/11/12 12:05:46 by jacarras         ###   ########.fr        #
+#    Updated: 2022/11/15 20:12:41 by jacarras         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,9 @@ SRC	= 	ft_isalpha.c \
 		ft_atoi.c \
 		ft_calloc.c \
 		ft_strdup.c \
+		ft_substr.c \
+		ft_strjoin.c \
+		ft_strtrim.c \
 
 OBJS =	$(SRC:.c=.o)
 FLAGS = -Wall -Werror -Wextra
