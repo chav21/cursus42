@@ -6,7 +6,7 @@
 /*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:48:02 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/12 12:44:35 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/11/18 18:13:03 by jacarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ char	*ft_strdup(const char *s1)
 		j++;
 	}
 	str[j] = '\0';
-	return (str);
+	return (&str[0]);
 }
