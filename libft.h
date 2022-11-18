@@ -6,7 +6,7 @@
 /*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 16:53:36 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/15 20:12:25 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/11/18 19:10:02 by jacarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,6 @@ char		*ft_strdup(const char *s1);
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s1, char const *set);
+char		*ft_itoa(int n);
 
 #endif
