@@ -6,10 +6,9 @@
 /*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 19:29:23 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/18 18:13:57 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/11/19 18:12:31 by jacarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 /*
 SYNOPSIS
@@ -24,28 +23,6 @@ DESCRIPTION
 */
 
 #include "libft.h"
-
-
-/*
-
-char	*ft_strtrim(char const *s1, char const *set)
-{
-	char	*str;
-	size_t	i;
-
-	if (!s1 || !set)
-		return (NULL);
-	while (*s1 && ft_strchr(set, *s1))
-		s1++;
-	i = ft_strlen(s1);
-	while (i && ft_strchr(set, s1[i]))
-	{
-		i--;
-	}
-	str = ft_substr ((char *)s1, 0, i + 1);
-	return (str);
-}
-*/
 
 int	ft_getstart(const char *s1, const char *set)
 {
