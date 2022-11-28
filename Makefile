@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+         #
+#    By: javier <javier@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/01 18:07:23 by jacarras          #+#    #+#              #
-#    Updated: 2022/11/19 17:52:47 by jacarras         ###   ########.fr        #
+#    Updated: 2022/11/26 17:52:01 by javier           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,7 @@ SRC	= 	ft_isalpha.c \
 		ft_putstr_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
+		ft_split.c \
 
 OBJS =	$(SRC:.c=.o)
 FLAGS = -Wall -Werror -Wextra
