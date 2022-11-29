@@ -6,7 +6,7 @@
 /*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 16:53:36 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/26 17:51:37 by javier           ###   ########.fr       */
+/*   Updated: 2022/11/29 16:50:07 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int c);
