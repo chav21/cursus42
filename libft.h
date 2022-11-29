@@ -6,7 +6,7 @@
 /*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 16:53:36 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/29 18:14:05 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/11/29 18:44:48 by jacarras         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(char *s, int fd);
 void		ft_putendl_fd(char *s, int fd);
 void		ft_putnbr_fd(int n, int fd);
+t_list		*ft_lstnew(void *content);
+char		**ft_split(char const *s, char c);
 t_list		*ft_lstnew(void *content);
 
 #endif

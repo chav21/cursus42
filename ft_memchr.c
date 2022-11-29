@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 12:52:39 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/10 13:38:36 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/11/29 16:34:32 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 SYNOPSIS
-     #include <string.h>
      void *memchr(const void *s, int c, size_t n);
 DESCRIPTION
      The memchr() function locates the first occurrence of c (converted to an
