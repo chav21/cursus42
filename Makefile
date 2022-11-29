@@ -6,7 +6,7 @@
 #    By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/01 18:07:23 by jacarras          #+#    #+#              #
-#    Updated: 2022/11/19 17:52:47 by jacarras         ###   ########.fr        #
+#    Updated: 2022/11/29 18:11:12 by jacarras         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,18 +46,21 @@ SRC	= 	ft_isalpha.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 
+BONUS =	ft_lstnew_bonus.c \
+
 OBJS =	$(SRC:.c=.o)
+BONUS_OBJS = $(BONUS:.c=.o)
 FLAGS = -Wall -Werror -Wextra
 
 all:	$(NAME)
 
 $(NAME):
-	gcc -c $(FLAGS) $(SRC)
-	ar -cr $(NAME) $(OBJS)
+	gcc -c $(FLAGS) $(SRC) $(BONUS)
+	ar -cr $(NAME) $(OBJS) $(BONUS_OBJS)
 	ranlib $(NAME)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
