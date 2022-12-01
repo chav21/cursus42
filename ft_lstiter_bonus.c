@@ -2,36 +2,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/29 16:34:09 by javier            #+#    #+#             */
-/*   Updated: 2022/12/01 13:18:02 by javier           ###   ########.fr       */
+/*   Created: 2022/12/01 13:03:27 by javier            #+#    #+#             */
+/*   Updated: 2022/12/01 13:14:46 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 SYNOPSIS
-    t_list *ft_lstnew(void *content);
+	void	ft_lstiter(t_list *lst, void (*f)(void *));
 DESCRIPTION
-    Crea un nuevo nodo utilizando malloc(3). La variable miembro 'content'
-	(declarada en libft.h) se inicializa con el contenido del parámetro 'content'.
-	La variable 'next' con NULL.
-	Devuelve el nuevo nodo.
+   Itera la lista 'lst' y aplica la función 'f' en el contenido de cada nodo.
+   No devuelve nada. 
+   lst: un puntero al primer nodo.
+   f: un puntero a la función que utilizará cada nodo.
 */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*nodo;
-
-	nodo = malloc(sizeof(t_list));
-	if (!nodo)
-		return (NULL);
-	nodo->content = content;
-	nodo->next = NULL;
-	return (nodo);
+	if (!lst)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }

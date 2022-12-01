@@ -2,36 +2,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/29 16:34:09 by javier            #+#    #+#             */
-/*   Updated: 2022/12/01 13:18:02 by javier           ###   ########.fr       */
+/*   Created: 2022/12/01 13:15:19 by javier            #+#    #+#             */
+/*   Updated: 2022/12/01 13:16:44 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 /*
 SYNOPSIS
-    t_list *ft_lstnew(void *content);
+	void	ft_lstadd_back(t_list **lst, t_list *new);
 DESCRIPTION
-    Crea un nuevo nodo utilizando malloc(3). La variable miembro 'content'
-	(declarada en libft.h) se inicializa con el contenido del parámetro 'content'.
-	La variable 'next' con NULL.
-	Devuelve el nuevo nodo.
+   Añade el nodo 'new' al final de la lista 'lst'.
+   No devuelve nada.
+   lst: el puntero al primer nodo de la lista.
+   new: el puntero a un nodo que añadir a la lista.
 */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*nodo;
+	t_list	*aux;
 
-	nodo = malloc(sizeof(t_list));
-	if (!nodo)
-		return (NULL);
-	nodo->content = content;
-	nodo->next = NULL;
-	return (nodo);
+	if (!new)
+		return ;
+	if (!*lst)
+	{
+		*lst = new;
+		return ;
+	}
+	aux = ft_lstlast(*lst);
+	aux->next = new;
 }
