@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 19:32:32 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/08 21:02:27 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/01 14:21:19 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ RETURN VALUES
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
+	/*
 	size_t	i;
 
 	i = 0;
@@ -48,4 +49,18 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		}
 	}	
 	return (dst);
+*/
+	const unsigned char	*s;
+	unsigned char		*d;
+
+	if (!dst && !src)
+		return (dst);
+	if (dst < src)
+		return (ft_memcpy(dst, src, len));
+	s = (unsigned char *)src;
+	d = (unsigned char *)dst;
+	while (len--)
+		d[len] = s[len];
+	return (dst);
+
 }

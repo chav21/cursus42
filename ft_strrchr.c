@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:09:22 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/10 12:13:39 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:05:52 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,19 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
+
+/*
+char	*ft_strrchr(const char *s, int c)
+{
+	int	i;
+
+	i = ft_strlen(s);
+	while (i >= 0)
+	{
+		if (s[i] == ((const char)c))
+			return ((char *)(s + i));
+		i--;
+	}
+	return (0);
+}
+*/
