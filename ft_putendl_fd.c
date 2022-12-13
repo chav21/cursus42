@@ -3,20 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 17:43:47 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/19 18:03:36 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:39:06 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	void	ft_putendl_fd(char *s, int fd);
-DESCRIPCIÓN
-	Envía la string 's' al file descriptor dado, seguido de un salto de línea.
-	Se permite write.
-*/
 
 #include "libft.h"
 #include <unistd.h>

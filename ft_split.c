@@ -6,20 +6,9 @@
 /*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 16:46:08 by javier            #+#    #+#             */
-/*   Updated: 2022/11/28 11:06:40 by javier           ###   ########.fr       */
+/*   Updated: 2022/12/03 12:39:40 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	char **ft_split(char const *s, char c);
-DESCRIPCIÓN
-	Reserva (utilizando malloc(3)) un array de strings resultante de separar la
-	string 's' en substrings utilizando el carácter 'c' como delimitador. El
-	array debe terminar con un puntero NULL.
-	Devuelve el array de nuevas strings resulante de la separación. NULL si
-	falla la reserva de memoria.
-*/
 
 #include "libft.h"
 

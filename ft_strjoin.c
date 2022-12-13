@@ -3,21 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 17:47:49 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/15 19:01:35 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:40:12 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	 char *ft_strjoin(char const *s1, char const *s2);
-DESCRIPTION
-     Hay que añadir s2 a s1 y devolver la nueva string. NULL si falla reserva de
-	 memoria. Reserva (con malloc(3)) y devuelve una nueva string, formada por
-	 la concatenación de s1 y s2.
-*/
 
 #include "libft.h"
 

@@ -3,20 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 17:49:22 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/19 18:02:50 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:39:21 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	void	ft_putnbr_fd(int n, int fd);
-DESCRIPCIÓN
-	Envía el número 'n' al file descriptor dado.
-	Se permite write.
-*/
 
 #include "libft.h"
 #include <unistd.h>

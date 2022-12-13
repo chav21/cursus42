@@ -3,22 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 17:34:15 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/19 18:03:55 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:39:28 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	void	ft_putstr_fd(char *s, int fd);
-DESCRIPCIÓN
-	Envía la string 's' al file descriptor especificado.
-	s: la string a enviar.
-	fd: el file descriptor sobre el que escribir.
-	Se permite write.
-*/
 
 #include "libft.h"
 #include <unistd.h>

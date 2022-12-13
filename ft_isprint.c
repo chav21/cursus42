@@ -3,21 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 10:31:50 by javier            #+#    #+#             */
-/*   Updated: 2022/11/08 17:40:12 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:34:32 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	 #include <ctype.h>
-	 int isprint(int c);
-RETURN VALUES
-	 The isprint() function returns zero if the character tests false and 
-	 returns non-zero if the character tests true.
-*/
 
 #include "libft.h"
 

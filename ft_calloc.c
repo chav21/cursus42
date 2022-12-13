@@ -3,36 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 20:16:30 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/12 11:47:19 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:34:03 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-     #include <stdlib.h>
-     void *calloc(size_t count, size_t size);
-DESCRIPTION
-     The malloc(), calloc(), valloc(), realloc(), and reallocf() functions
-	 allocate memory.  The allocated memory is aligned such that it can be used
-	 for any data type.  The aligned_alloc() function allocates memory with the
-	 requested alignment. The free() function frees allocations that were
-	 created via the preceding allocation functions.
-
-     The malloc() function allocates size bytes of memory and returns a pointer
-	 to the allocated memory.
-
-     The calloc() function contiguously allocates enough space for count objects
-	 that are size bytes of memory each and returns a pointer to the allocated
-	 memory.  The allocated memory is filled with bytes of value zero.
-
-RETURN VALUES
-     If successful, calloc(), malloc(), realloc(), reallocf(), valloc(), and
-	 aligned_alloc() functions return a pointer to allocated memory.  If there
-	 is an error, they return a NULL pointer and set errno to ENOMEM.
-*/
 
 #include "libft.h"
 

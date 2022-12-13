@@ -3,21 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 10:15:25 by javier            #+#    #+#             */
-/*   Updated: 2022/11/07 13:27:22 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:34:10 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/* 
-SYNOPSIS
-	 #include <ctype.h>
-	 int isalnum(int c);
-RETURN VALUES
-	 The isalnum() function returns zero if the character tests false and 
-	 returns non-zero if the character tests true.
-*/
 
 #include "libft.h"
 

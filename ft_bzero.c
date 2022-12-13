@@ -3,21 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 18:41:59 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/08 18:56:04 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:32:41 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-     #include <strings.h>
-     void bzero(void *s, size_t n);
-DESCRIPTION
-	The bzero() function writes n zeroed bytes to the string s.  If n is zero,
-	bzero() does nothing.
-*/
 
 #include "libft.h"
 

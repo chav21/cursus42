@@ -6,21 +6,9 @@
 /*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 19:29:23 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/26 17:52:41 by javier           ###   ########.fr       */
+/*   Updated: 2022/12/03 12:41:25 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	 char	*ft_strtrim(char const *s1, char const *set);
-	 s1: la string que debe ser recortada.
-	 set: los caracteres a eliminar de la string.
-DESCRIPTION
-    Elimina todos los caracteres de la string 'set' desde el principio y desde
-	el final de 's1', hasta encontrar un caracter no perteneciente a 'set'. La
-	string resultante se devuelve con una reserva de malloc (3).
-	Valor devuelto: La string recortada. NULL si falla la reserva de memoria.
-*/
 
 #include "libft.h"
 

@@ -3,21 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 11:05:06 by javier            #+#    #+#             */
-/*   Updated: 2022/11/07 13:02:01 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:40:43 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	 #include <string.h>
-	 size_t strlen(const char *s);
-RETURN VALUES
-	 The strlen() function returns the number of characters that precede the 
-	 terminating NUL character. 
-*/
 
 #include "libft.h"
 

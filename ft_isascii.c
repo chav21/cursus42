@@ -3,21 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 10:22:13 by javier            #+#    #+#             */
-/*   Updated: 2022/11/07 13:06:15 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:34:35 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-     #include <ctype.h>
-     int isascii(int c);
-RETURN
-Returns nonzero if c can be represented as a character in the 7–bit US-ASCII 
-character set. Otherwise, it returns 0.
-*/
 
 #include "libft.h"
 

@@ -3,23 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 11:01:13 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/15 17:53:22 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:41:34 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	 char *ft_substr(char const *s, unsigned int start, size_t len);
-DESCRIPTION
-     Reserva (con malloc (3)) y devuelve una substring de la string 's'.
-	 La substring empieza desde el índice 'start' y tiene una longitud máxima
-	 'len'.
-RETURN VALUES
-    Devuelve la substring resultante. NULL si falla la reserva de memoria.
-*/
 
 #include "libft.h"
 

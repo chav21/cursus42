@@ -3,23 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 16:34:58 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/19 18:04:32 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:40:06 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-DESCRIPCIÓN
-	A cada carácter de la string 's', apica la función 'f' dando como
-	parámetros el índice de cada carácter dentro de 's' y la dirección del
-	propio carácter, que podrá modificarse si es necesario.
-	s: la string que iterar.
-	f : la función a aplicar sobre cada carácter.
-*/
 
 #include "libft.h"
 

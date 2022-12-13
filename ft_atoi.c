@@ -3,21 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:11:43 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/11 20:15:55 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:42:52 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-     #include <stdlib.h>
-     int atoi(const char *str);
-DESCRIPTION
-     The atoi() function converts the initial portion of the string pointed to
-	 by str to int representation.
-*/
 
 #include "libft.h"
 

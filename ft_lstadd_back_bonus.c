@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,19 +6,9 @@
 /*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 13:15:19 by javier            #+#    #+#             */
-/*   Updated: 2022/12/01 13:16:44 by javier           ###   ########.fr       */
+/*   Updated: 2022/12/03 12:46:17 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-	void	ft_lstadd_back(t_list **lst, t_list *new);
-DESCRIPTION
-   Añade el nodo 'new' al final de la lista 'lst'.
-   No devuelve nada.
-   lst: el puntero al primer nodo de la lista.
-   new: el puntero a un nodo que añadir a la lista.
-*/
 
 #include "libft.h"
 

@@ -3,20 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jacarras <jacarras@student.42malaga.com>   +#+  +:+       +#+        */
+/*   By: javier <javier@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:53:47 by jacarras          #+#    #+#             */
-/*   Updated: 2022/11/09 11:57:13 by jacarras         ###   ########.fr       */
+/*   Updated: 2022/12/03 12:37:47 by javier           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-SYNOPSIS
-     #include <string.h>
-     void *memset(void *b, int c, size_t len);
-RETURN VALUES
-     The memset() function returns its first argument.
-*/
 
 #include "libft.h"
 
